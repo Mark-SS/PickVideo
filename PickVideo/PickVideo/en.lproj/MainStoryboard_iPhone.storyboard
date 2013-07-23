@@ -1,23 +1,162 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4EQ-sy-rFe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="5">
+        <!--hgfj-->
+        <scene sceneID="2FU-3u-6Vr">
             <objects>
-                <viewController id="2" customClass="GLViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                <viewController id="KEX-cG-v64" userLabel="hgfj" customClass="GLViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9pX-gb-hCT">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9M4-J8-Od0">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="录制视频">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordVideo:" destination="KEX-cG-v64" eventType="touchUpInside" id="r0b-La-tce"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62O-YE-auo">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Aia-K6-2Jq" kind="push" id="VkZ-X1-VWU"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jZC-EQ-KU0">
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segement:" destination="KEX-cG-v64" eventType="valueChanged" id="xqU-Ua-Sfp"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVr-wu-Olg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="KIh-SS-GpA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9M4-J8-Od0" firstAttribute="leading" secondItem="UVr-wu-Olg" secondAttribute="leading" type="default" id="J91-k7-PFZ"/>
+                            <constraint firstItem="jZC-EQ-KU0" firstAttribute="centerX" secondItem="UVr-wu-Olg" secondAttribute="centerX" type="default" id="Mvl-JQ-Ixn"/>
+                            <constraint firstAttribute="trailing" secondItem="UVr-wu-Olg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="adH-qe-Dal"/>
+                            <constraint firstItem="jZC-EQ-KU0" firstAttribute="top" secondItem="9M4-J8-Od0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bFM-Wq-0wv"/>
+                            <constraint firstAttribute="trailing" secondItem="62O-YE-auo" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="kYV-F8-03I"/>
+                            <constraint firstItem="9M4-J8-Od0" firstAttribute="baseline" secondItem="62O-YE-auo" secondAttribute="baseline" type="default" id="rdu-PT-MnO"/>
+                            <constraint firstItem="UVr-wu-Olg" firstAttribute="top" secondItem="9pX-gb-hCT" secondAttribute="top" constant="46" id="xtI-b0-k9n"/>
+                            <constraint firstItem="9M4-J8-Od0" firstAttribute="top" secondItem="9pX-gb-hCT" secondAttribute="top" constant="98" id="zNV-0t-YW7"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="First" id="DiY-ec-p13"/>
+                    <connections>
+                        <outlet property="recordBtn" destination="9M4-J8-Od0" id="hKJ-QN-GW1"/>
+                        <outlet property="stopBtn" destination="62O-YE-auo" id="eqv-ZZ-FxQ"/>
+                        <outlet property="textField" destination="UVr-wu-Olg" id="fgB-Nv-VK1"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQS-3b-VdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="610" y="-145"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="voB-h7-ELf">
+            <objects>
+                <viewController id="Aia-K6-2Jq" customClass="GLFirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ci-Mb-yl4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYa-R2-mqz">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goto:" destination="Aia-K6-2Jq" eventType="touchUpInside" id="JHB-ry-xrK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yYa-R2-mqz" firstAttribute="top" secondItem="9ci-Mb-yl4" secondAttribute="top" constant="203" id="Vra-oM-d5Q"/>
+                            <constraint firstItem="yYa-R2-mqz" firstAttribute="leading" secondItem="9ci-Mb-yl4" secondAttribute="leading" constant="129" id="Vzp-x2-muG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="863-U9-shc"/>
+                    <connections>
+                        <outlet property="goBtn" destination="yYa-R2-mqz" id="cRg-Dx-UYq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRw-dM-XNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5me-kr-gft">
+            <objects>
+                <navigationController id="4EQ-sy-rFe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="m9n-kj-dKh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OHG-PW-Z9X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KEX-cG-v64" kind="relationship" relationship="rootViewController" id="xR4-bP-Mj0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qGm-iJ-jLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="-145"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="GLFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GLFirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="goto:"/>
+                <relationship kind="outlet" name="goBtn" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="GLViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GLViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="recordVideo:"/>
+                <relationship kind="action" name="segement:"/>
+                <relationship kind="outlet" name="recordBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="stopBtn" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

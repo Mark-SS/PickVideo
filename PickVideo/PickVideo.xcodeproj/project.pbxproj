@@ -19,6 +19,7 @@
 		8534FAFE179536D20039D79F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8534FAFC179536D20039D79F /* MainStoryboard_iPhone.storyboard */; };
 		8534FB01179536D20039D79F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8534FAFF179536D20039D79F /* MainStoryboard_iPad.storyboard */; };
 		8534FB04179536D20039D79F /* GLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8534FB03179536D20039D79F /* GLViewController.m */; };
+		8555A85517954EC3000983CC /* GLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8555A85417954EC3000983CC /* GLFirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		8534FB00179536D20039D79F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8534FB02179536D20039D79F /* GLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLViewController.h; sourceTree = "<group>"; };
 		8534FB03179536D20039D79F /* GLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLViewController.m; sourceTree = "<group>"; };
+		8555A85317954EC3000983CC /* GLFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFirstViewController.h; sourceTree = "<group>"; };
+		8555A85417954EC3000983CC /* GLFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLFirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				8534FAFF179536D20039D79F /* MainStoryboard_iPad.storyboard */,
 				8534FB02179536D20039D79F /* GLViewController.h */,
 				8534FB03179536D20039D79F /* GLViewController.m */,
+				8555A85317954EC3000983CC /* GLFirstViewController.h */,
+				8555A85417954EC3000983CC /* GLFirstViewController.m */,
 				8534FAEB179536D20039D79F /* Supporting Files */,
 			);
 			path = PickVideo;
@@ -181,6 +186,7 @@
 				8534FAF1179536D20039D79F /* main.m in Sources */,
 				8534FAF5179536D20039D79F /* GLAppDelegate.m in Sources */,
 				8534FB04179536D20039D79F /* GLViewController.m in Sources */,
+				8555A85517954EC3000983CC /* GLFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +319,7 @@
 				8534FB09179536D20039D79F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

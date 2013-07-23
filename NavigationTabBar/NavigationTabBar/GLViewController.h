@@ -1,8 +1,8 @@
 //
 //  GLViewController.h
-//  PickVideo
+//  NavigationTabBar
 //
-//  Created by Diffverse on 13-7-16.
+//  Created by Diffverse on 13-7-17.
 //  Copyright (c) 2013年 gongliang. All rights reserved.
 //
 
@@ -11,7 +11,7 @@
 @interface GLViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (weak, nonatomic) IBOutlet UIButton *recordBtn;
-@property (weak, nonatomic) IBOutlet UIButton *stopBtn;
+
+@property (strong, nonatomic) NSString *string;
 
 @end
